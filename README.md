@@ -117,3 +117,7 @@ List of your websites:
     azure site list
 
 And your app should be up on Azure.
+
+###Update
+
+Update listen ip:port for run in Openshift
