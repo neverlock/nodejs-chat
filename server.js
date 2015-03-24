@@ -5,7 +5,7 @@ var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 var nodes = { };
 var usernames = {};
-server.listen(process.env.OPENSHIFT_NODEJS_PORT ,process.env.OPENSHIFT_NODEJS_IP);
+server.listen(process.env.OPENSHIFT_NODEJS_PORT || 8080 ,process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
 //server.listen(process.env.PORT || 3000);
 
 app.set('view engine', 'ejs');
